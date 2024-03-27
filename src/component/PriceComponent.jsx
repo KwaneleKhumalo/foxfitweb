@@ -13,14 +13,14 @@ const PriceComponent = () => {
     <>
       <Header content={<PriceHeaderContent />} />
 
-      <Row className="py-5 bg-dark-subtle text-dark">
+      <Row className="p-4 bg-dark-subtle text-dark">
         <Col md={12} className="mx-aut0 my-auto text-center mb-5">
           <h2 style={styles.heading1} className="col-md-5 mx-auto ">
             Monthly Pricing
           </h2>
         </Col>
         {monthlyPricing.map(price => (
-          <Col md={3} className="shadow shadow-lg p-0 rounded rounded-3 mx-auto text-light bg-dark mb-5" key={price.subscriptionID}>
+          <Col md={8} lg={5} xl={3} className="shadow shadow-lg p-0 rounded rounded-3 mx-auto text-light bg-dark mb-5" key={price.subscriptionID}>
             <h4 className="mb-3 text-center bg-danger ms-auto text-light ">{price.subscriptionType}</h4>
             <h3 className="text-center">{price.subscriptionDescription}</h3>
             <h4 className="text-start mt-3 p-3 border-bottom border-danger col-md-11 text-info mx-auto">
@@ -42,14 +42,14 @@ const PriceComponent = () => {
         ))}
       </Row>
 
-      <Row className="py-5 py-5 bg-dark text-light">
+      <Row className="p-4 py-5 bg-dark text-light">
         <Col md={12} className="mx-aut0 my-auto text-center mb-5">
           <h2 style={styles.heading1} className="col-md-5 mx-auto ">
             Annual Pricing
           </h2>
         </Col>
         {annualPricing.map(price => (
-          <Col md={3} className="shadow shadow-lg p-0 rounded rounded-3 mx-auto text-dark bg-dark-subtle mb-5" key={price.subscriptionID}>
+          <Col md={8} lg={5} xl={3} className="shadow shadow-lg p-0 rounded rounded-3 mx-auto text-dark bg-dark-subtle mb-5" key={price.subscriptionID}>
             <h4 className="mb-3 text-center bg-danger ms-auto text-light p-2">{price.subscriptionType}</h4>
             <h3 className="text-center">{price.subscriptionDescription}</h3>
             <h4 className="text-start mt-3 p-3 border-bottom border-danger col-md-11 text-danger mx-auto">
@@ -82,7 +82,7 @@ const PriceComponent = () => {
       </Row>
       <WebFooter />
     </>
-  )
+  );
 }
 
 const styles = {
