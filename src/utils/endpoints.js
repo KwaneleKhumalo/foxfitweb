@@ -1,0 +1,8 @@
+export const USER_REGISTRATION = "http://localhost:4000/api/v1/users/registration"
+export const USER_LOGIN = "http://localhost:4000/api/v1/users/login"
+export const USER_LOGOUT = "http://localhost:4000/api/v1/users/logout"
+export const PROFILE = "http://localhost:4000/api/v1/users/auth/profile"
+export const USER_SETTINGS = "http://localhost:4000/api/v1/users/auth/settings"
+export const SUBSCRIPTION_PLANS = "http://localhost:4000/api/v1/subscription"
+export const SUBSCRIPTION_PAYMENT = "http://localhost:4000/api/v1/subscription/payment"
+export const WORKOUT = "http://localhost:4000/api/v1/workouts"
